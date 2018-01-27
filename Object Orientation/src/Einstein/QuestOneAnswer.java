@@ -2,8 +2,6 @@ package Einstein;
 
 public class QuestOneAnswer extends QuestOneResolution{
 	
-	private Double calculation;
-	private String situation;
 	private Double scoreTest;
 	private double resultTest;
 	
@@ -17,17 +15,11 @@ public class QuestOneAnswer extends QuestOneResolution{
 		return sum;
 	}
 	
-	public Double getCalculation() {
-		return calculation;
+	
+	
+	public static void main(String[] args) {
+		QuestOneAnswer score = (QuestOneAnswer) new QuestOneResolution();
+		score.resultCalculation(9.1, 1);
+		System.out.println("Notas" + score.getScoreQuestion());
 	}
-	public void setCalculation(Double calculation) {
-		this.calculation = calculation;
-	}
-	public String getSituation() {
-		return situation;
-	}
-	public void setSituation(String situation) {
-		this.situation = situation;
-	}
-
 }

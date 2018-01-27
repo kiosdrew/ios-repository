@@ -1,9 +1,5 @@
 package Einstein;
 
-/**
- * @author Andrew 
- *
- */
 public class QuestOneResolution {
 	
 	private String name;
@@ -22,15 +18,16 @@ public class QuestOneResolution {
 		this.name = name;
 	}
 
-	public Double getScore() {
+	public Double getScoreQuestion() {
+		Double i = null;
 		if(scoreQuestion == null) {
-			return scoreQuestion = 0.0;
+			return i;
 		}else {
 			return scoreQuestion;
 		}
 	}
 
-	public void setScore(Double scoreQuestion) {
+	public void setScoreQuestion(Double scoreQuestion) {
 		this.scoreQuestion = scoreQuestion;
 	}
 	
